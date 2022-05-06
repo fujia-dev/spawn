@@ -19,13 +19,13 @@ English | [简体中文](./README.zh-CN.md)
 Using npm:
 
 ```sh
-npm install @fujia/fetch
+npm install @fujia/spawn
 ```
 
 Using yarn:
 
 ```sh
-yarn add @fujia/fetch
+yarn add @fujia/spawn
 ```
 
 ## Usage

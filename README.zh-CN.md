@@ -19,13 +19,13 @@
 使用 npm:
 
 ```sh
-npm install @fujia/fetch
+npm install @fujia/spawn
 ```
 
 使用 yarn:
 
 ```sh
-yarn add @fujia/fetch
+yarn add @fujia/spawn
 ```
 
 ## 使用
