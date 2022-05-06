@@ -1,6 +1,6 @@
 import cp, { CommonSpawnOptions, ChildProcess } from 'child_process';
 
-export const isWin32 = process.platform === 'win32';
+const isWin32 = process.platform === 'win32';
 
 export const spawn = (
   command: string,

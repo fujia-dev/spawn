@@ -1,16 +1,10 @@
 <div align="center">
-  <a href="" target="_blank">
-    <img alt="" width="200" src=""/>
-  </a>
-</div>
-
-<div align="center">
   <h1>@fujia/spawn</h1>
 </div>
 
 <div align="center">
 
-Your description
+An easy-to-use spawn function of node.js.
 
 </div>
 
@@ -20,18 +14,44 @@ English | [简体中文](./README.zh-CN.md)
 
 </div>
 
+## Installing
 
-## Installation
+Using npm:
 
+```sh
+npm install @fujia/fetch
+```
+
+Using yarn:
+
+```sh
+yarn add @fujia/fetch
+```
 
 ## Usage
 
+Simply to use, as follows:
 
-## Documentation
+```ts
+import { spawn, spawnAsync } from '@fujia/spawn';
 
+spawn('npm', ['get', 'registry'], {
+  stdio: 'inherit',
+  shell: true,
+});
 
-## Features
+async function getNpmRegistry() {
+  const code = await spawnAsync('npm', ['get', 'registry'], {
+    stdio: 'inherit',
+    shell: true,
+  });
 
+  console.log('exec code', code);
+}
+
+getNpmRegistry();
+```
 
 ## References
 
+1. [child_process](https://nodejs.org/dist/latest-v16.x/docs/api/child_process.html).
